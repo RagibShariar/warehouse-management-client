@@ -22,10 +22,10 @@ const Login = () => {
     let errorMessage;
     if (error) {
         if (error.message === 'Firebase: Error (auth/wrong-password).') {
-            errorMessage = 'Wrong Password Please Try Again';
+            errorMessage = 'Wrong Password. Please Try Again';
         }
         else if (error.message === 'Firebase: Error (auth/user-not-found).') {
-            errorMessage = 'User Not Found. Maybe invalid email or password';
+            errorMessage = 'User Not Found';
         }
         else {
             errorMessage = error.message;

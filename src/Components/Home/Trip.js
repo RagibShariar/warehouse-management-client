@@ -3,7 +3,7 @@ import './../Inventory/Inventory.css';
 const Trip = () => {
     return (
         <div>
-            <h1 className='text-danger text-center my-5'>Why US?</h1>
+            <h1 className='text-dark text-center my-5'>Why Choose Us?</h1>
             <div className='justify-content-between align-items-center custom-grid'>
                 <div className="d-flex flex-column custom-bg-dark rounded custom-height justify-content-center align-items-center px-5">
                     <h2 className='text-center my-3'>Trip to the <span className='text-primary'>WORLD!!</span></h2>

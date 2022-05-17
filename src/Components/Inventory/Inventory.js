@@ -9,7 +9,7 @@ const Inventory = () => {
     const { name, img, description, price, quantity, supplierName, sold } = bike;
     useEffect(() => {
         async function fetchData() {
-            const res = await fetch(`https://protected-peak-69494.herokuapp.com/product/${id}`)
+            const res = await fetch(`http://localhost:5000/products/${id}`)
             const data = await res.json()
             setBike(data);
         }
@@ -22,7 +22,7 @@ const Inventory = () => {
         let newSold = sold + 1;
         const newBike = { ...bike, quantity: newQuantity, sold: newSold };
         setBike(newBike);
-        fetch(`https://protected-peak-69494.herokuapp.com/update-product/${id}`, {
+        fetch(`http://localhost:5000/products/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -40,7 +40,7 @@ const Inventory = () => {
         let newQuantity = quantity + itemValue;
         const newBike = { ...bike, quantity: newQuantity }
         setBike(newBike);
-        fetch(`https://protected-peak-69494.herokuapp.com/update-product/${id}`, {
+        fetch(`http://localhost:5000/products/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -54,19 +54,23 @@ const Inventory = () => {
         <div>
 
             <div className='container my-3 w-75 custom-width-info'>
-
+                
                 <div className="row">
                     <div className="col-lg-6 rounded d-flex justify-content-center align-items-center custom-bg-light">
                         <img src={img} className='className="mx-auto w-75 img-fluid' alt='not found' />
                     </div>
                     <div className="col-lg-6 custom-bg-dark rounded py-5">
-                        <h2 className="card-title">{name}</h2>
-                        <h2 className='my-2'>$ {price}</h2>
-                        <small className='my-2'>Supplier : <b>{supplierName}</b></small><br />
-                        <small>Available : {quantity > 0 ? quantity : 'Out of stock'}</small><br />
-                        <small className='my-2'>Total sold : <b>{sold}</b></small><br />
-                        <p className='my-2'>{description}</p>
-                        <button onClick={() => removeOne(id)} className='btn btn-primary' disabled={quantity <= 0}>Delivered</button>
+                        <h1 className="card-title">{name}</h1>
+                        <h5 className='mb-4'>BDT {price}</h5>
+                        <p className='my-2'>Supplier : <b>{supplierName}</b></p>
+                        
+                        <p className='my-2'>Available : <b >{quantity > 0 ? quantity : 'Out of stock'}</b></p>
+                        
+                        <p className='my-2'>Total sold : <b className='m-0'>{sold}</b></p>
+                        
+                        <p className='my-2 mb-2'>Product Id: {id}</p>
+                        
+                        <button onClick={() => removeOne(id)} className='btn btn-success mt-4' disabled={quantity <= 0}>Delivered</button>
                         <Form className='w-75 mx-auto my-5' onSubmit={addToStock}>
                             <Form.Group className="mb-3">
                                 <Form.Control type="number" placeholder='Add to stock' name='itemValue' />
@@ -76,7 +80,7 @@ const Inventory = () => {
                             </Button>
                         </Form>
                     </div>
-                    <Button as={Link} to='/manage-items' variant="primary" className='d-block my-5 w-50 mx-auto'>Manage Inventory</Button>
+                    <Button as={Link} to='/manage-items' variant="primary" className='d-block my-5 w-25 mx-auto'>Manage Inventory</Button>
                 </div>
             </div>
         </div >

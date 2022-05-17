@@ -18,7 +18,7 @@ const ManageItems = () => {
         const confirm = window.confirm('Are you sure you want to delete?');
         //removing item from database
         if (confirm) {
-            fetch(`https://protected-peak-69494.herokuapp.com/product/${id}`, {
+            fetch(`http://localhost:5000/products/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

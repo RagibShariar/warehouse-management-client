@@ -51,7 +51,7 @@ const AddItem = () => {
         <div>
             <h1 className='mx-auto text-center mt-5'>Please add <span className='text-primary'>product</span> with valid info</h1>
 
-            <Form className='w-75 mx-auto my-5' onSubmit={addItem}>
+            <Form className='w-50 mx-auto my-5 border p-3' onSubmit={addItem}>
 
                 <Form.Group className="mb-3">
                     <Form.Control type="text" placeholder="Enter Bike Name" name='name' required />
