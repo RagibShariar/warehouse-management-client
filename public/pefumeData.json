@@ -1,0 +1,56 @@
+[
+   {
+      "name":"Davidoff Cool Water Intense",
+      "img":"https://i.ibb.co/M2TpKnK/davidoff-cool-water-intense-450x450.jpg",
+      "price":"4,400.00",
+      "description":"Make it feel like a day at the beach without ever leaving your office when you’re wearing Cool Water Intense, a revitalizing men’s fragrance. ",
+      "quantity":64,
+      "supplierName":"Davidoff",
+      "sold":17
+   },
+   {
+      "name":"Dior Sauvage EDT for Men",
+      "img":"https://i.ibb.co/mR4bKxY/Sauvage.jpg",
+      "price":"15,000.00",
+      "description":"Dior Sauvage EDT for men Cologne by Christian Dior, Unleash your inner savage and be the alpha of the pack with sauvage by dior . This remix of the 1996 eau sauvage is a modern take of the original’s fresh, ferocious fragrance.",
+      "quantity":18,
+      "supplierName":"Dior",
+      "sold":19
+   },
+   {
+      "name":"Armaf Club de Nuit Sillage",
+      "img":"https://i.ibb.co/hfHV06J/Armaf-Club-de-Nuit-Sillage-EDP-450x450.jpg",
+      "price":"4,000.00",
+      "description":"Armaf Club De Nuit Sillage Cologne by Armaf, Burst onto the nightlife scene feeling effortlessly energetic and refreshed when you’re wearing the provocative Club De Nuit Sillage.",
+      "quantity":15,
+      "supplierName":"Club De Nuit",
+      "sold":15
+   },
+   {
+      "name":"Polo Blue by Ralph Lauren ",
+      "img":"https://i.ibb.co/k0gNb8j/Polo-Ralph-Blue.jpg",
+      "price":"9,000.00",
+      "description":"Polo Blue 125ml EDT Cologne by Ralph Lauren, Polo blue has notes of melon de cavaillon, lush accord, lush watery melon, fresh sliced cucumber, tangerine, amber wood, patchouli coeur, and sheer musk.",
+      "quantity":14,
+      "supplierName":"Polo",
+      "sold":28
+   },
+   {
+      "name":"Armaf Club de Nuit Intense Man",
+      "img":"https://i.ibb.co/R6bw6Tp/Club-De-Nuit-Intense-Cologne-by-Armaf-450x450.jpg",
+      "price":"3,400.00",
+      "description":"This fragrance was released in 2015. A fruity smoky scent that presents like a rich luscious high-end cologne. You will be pleasantly surprised at the value of this affordable scent.",
+      "quantity":15,
+      "supplierName":"Club de Nuit",
+      "sold":17
+   },
+   {
+      "name":"Hugo Boss The Scent ",
+      "img":"https://i.ibb.co/fvmMjZH/Hugo-Boss-The-Scent-EDT-for-Men-450x450.jpg",
+      "description":"Hugo Boss, introduced in 2015, is a seductive, confident men’s fragrance. The sharp, light shot of ginger opens this spicy fragrance. Bergamot keeps it bright while mandarin orange adds a pleasant, succulent facet.",
+      "price":"6,000.00",
+      "quantity":14,
+      "supplierName":"Hugo",
+      "sold":13
+   }
+]

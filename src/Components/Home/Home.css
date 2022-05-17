@@ -1,0 +1,41 @@
+.w-90 {
+    width: 90%;
+}
+
+.btn-bottom:hover {
+    background-color: #405c84 !important;
+    transition: 1s;
+}
+
+.btn-bottom:hover::after {
+    content: ' >>> ';
+}
+
+.custom-card {
+    margin: 2rem 3rem;
+}
+
+@media only screen and (max-width:800px) {
+    .custom-bg-dark {
+        padding: 2px;
+    }
+
+    .custom-card {
+        margin: 1rem;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .banner-container {
+        position: absolute;
+        top: -60px;
+    }
+
+    .custom-width-info {
+        width: 80%;
+    }
+
+    .custom-card {
+        margin: 1rem;
+    }
+}
