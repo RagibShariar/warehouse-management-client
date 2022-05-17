@@ -15,7 +15,7 @@ const ManageItems = () => {
 
     //handling delete
     const removeItem = (id) => {
-        const confirm = window.confirm('Are you sure you want to delete?');
+        const confirm = window.confirm('Click Confirm to delete');
         //removing item from database
         if (confirm) {
             fetch(`http://localhost:5000/products/${id}`, {

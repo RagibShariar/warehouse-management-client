@@ -71,7 +71,7 @@ const Inventory = () => {
                         <p className='my-2 mb-2'>Product Id: {id}</p>
                         
                         <button onClick={() => removeOne(id)} className='btn btn-success mt-4' disabled={quantity <= 0}>Delivered</button>
-                        <Form className='w-75 mx-auto my-5' onSubmit={addToStock}>
+                        <Form className='w-50 my-5' onSubmit={addToStock}>
                             <Form.Group className="mb-3">
                                 <Form.Control type="number" placeholder='Add to stock' name='itemValue' />
                             </Form.Group>
