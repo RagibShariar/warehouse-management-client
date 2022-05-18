@@ -35,12 +35,13 @@ const ManageItems = () => {
 
     //adding to order lists
     const addToOrder = (bike) => {
-        const email = bike.email;
+        const userEmail = user.email;
         const img = bike.img;
         const name = bike.name;
         const supplierName = bike.supplierName;
         const price = bike.price;
-        const newBike = { img, name, supplierName, email, price }
+        const email = bike.email;
+        const newBike = { img, name, supplierName, email, price,userEmail }
         // console.log(newBike);
         fetch(`https://protected-peak-69494.herokuapp.com/add-order`, {
         // fetch(`http://localhost:5000/products`, {

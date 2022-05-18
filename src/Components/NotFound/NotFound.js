@@ -2,9 +2,9 @@ import React from 'react';
 
 const NotFound = () => {
     return (
-        <div style={{ textAlign: 'center' }}>
-            <h1>404, Page Not Found</h1>
-            <h4>Please try another link or back from here</h4>
+        <div style={{ textAlign: 'center', padding:'100px' }}>
+            <h1 style={{fontSize:'200px'}}> 404 </h1>
+            <h1 style={{fontSize:'60px'}}>Page Not Found :( </h1>
         </div>
     );
 };
