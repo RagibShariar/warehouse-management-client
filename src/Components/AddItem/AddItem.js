@@ -89,7 +89,7 @@ const AddItem = () => {
                     </div>
                 </div>
 
-                <Button variant="primary" type="submit">Add Your Product</Button>
+                <Button variant="primary" type="submit">Add Product</Button>
                 <br />
 
                 <MyVerticallyCenteredModal
