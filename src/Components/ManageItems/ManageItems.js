@@ -39,9 +39,11 @@ const ManageItems = () => {
         const img = bike.img;
         const name = bike.name;
         const supplierName = bike.supplierName;
-        const newBike = { img, name, supplierName, email }
+        const price = bike.price;
+        const newBike = { img, name, supplierName, email, price }
         // console.log(newBike);
         fetch(`https://protected-peak-69494.herokuapp.com/add-order`, {
+        // fetch(`http://localhost:5000/products`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -56,9 +58,9 @@ const ManageItems = () => {
     return (
         <div>
 
-            <div className='container'>
+            <div className='container d-flex flex-end'>
 
-                <Button as={Link} to='/add-item' className='mt-5 d-block w-25' style={{ marginLeft: '70%' }}> Add item</Button>
+                <Button as={Link} to='/add-item' className='mt-5 ms-auto' style={{ width: '200px' }}> Add item</Button>
             </div>
 
             {
@@ -76,8 +78,9 @@ const ManageItems = () => {
                         <thead>
                             <tr>
                                 <th>Image</th>
-                                <th>Bike Name</th>
+                                <th>Perfume Name</th>
                                 <th>Supplier Name</th>
+                                <th>Email</th>
                                 <th>Manage Item</th>
                                 <th className='text-center'>Update Item</th>
                             </tr>
@@ -85,8 +88,8 @@ const ManageItems = () => {
                         <tbody>
                             {
                                 bikes.map(bike => <tr key={bike._id}>
-                                    <td>
-                                        <img src={bike.img} className='custom-img' style={{ width: '20px' }} alt='not found' />
+                                    <td className='text-center'>
+                                        <img src={bike.img} className='mx-auto custom-img' style={{ width: '70px' }} alt='not found' />
                                     </td>
                                     <td>
                                         {bike.name}
@@ -94,10 +97,11 @@ const ManageItems = () => {
                                     <td>
                                         {bike.supplierName}
                                     </td>
-                                    <td className='d-flex justify-content-around manage-btn-container'>
-                                        <button onClick={() => { removeItem(bike._id) }} className='btn manage-btn btn-danger'><TrashIcon className="h-5 w-5 text-blue-500" style={{ width: '20px' }} /></button>
-                                        <button onClick={() => { addToOrder(bike) }} className='btn manage-btn btn-danger'>
-                                            <PlusIcon className="h-5 w-5 text-blue-500" style={{ width: '20px' }} />
+                                    <td>{user.email}</td>
+                                    <td className='d-flexx text-center justify-content-around align-items-center  manage-btn-container'>
+                                        <button onClick={() => { removeItem(bike._id) }} className='btn manage-btn btn-danger mx-2'><TrashIcon className=" text-blue-500" style={{ width: '20px', height:'20px' }} /></button>
+                                        <button onClick={() => { addToOrder(bike) }} className='btn manage-btn btn-success mx-2'>
+                                            <PlusIcon className=" text-blue-500" style={{ width: '20px' }} />
                                         </button>
                                     </td>
                                     <td className='text-center'>

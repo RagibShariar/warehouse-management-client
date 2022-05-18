@@ -69,7 +69,7 @@ const MyItems = () => {
                         <thead>
                             <tr>
                                 <th>Image</th>
-                                <th>Bike Name</th>
+                                <th>Perfume Name</th>
                                 <th>Supplier Name</th>
                                 <th className='text-center'>Delete</th>
                             </tr>
@@ -78,8 +78,8 @@ const MyItems = () => {
                             {
                                 bikes.map(bike =>
                                     <tr key={bike._id}>
-                                        <td>
-                                            <img src={bike.img} className='custom-img' style={{ width: '20px' }} alt='not found' />
+                                        <td className='text-center'>
+                                            <img src={bike.img} className='custom-img' style={{ width: '70px' }} alt='not found' />
                                         </td>
                                         <td>
                                             {bike.name}
