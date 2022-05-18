@@ -22,7 +22,7 @@ const Inventory = () => {
         let newSold = sold + 1;
         const newBike = { ...bike, quantity: newQuantity, sold: newSold };
         setBike(newBike);
-        fetch(`http://localhost:5000/products/${id}`, {
+        fetch(`http://localhost:5000/update-product/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -40,7 +40,7 @@ const Inventory = () => {
         let newQuantity = quantity + itemValue;
         const newBike = { ...bike, quantity: newQuantity }
         setBike(newBike);
-        fetch(`http://localhost:5000/products/${id}`, {
+        fetch(`http://localhost:5000/update-product/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

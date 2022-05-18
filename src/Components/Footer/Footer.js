@@ -3,32 +3,39 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 const Footer = () => {
     return (
-        <div className='mt-5 bg-dark text-light'>
-            <br />
-            <Container>
+        <div className='mt-5 bg-dark text-light pt-3'>
+            {/* <br /> */}
+            <Container className='py-5'>
                 <Row className='g-5 mx-auto'>
                     <Col lg={4} md={6} sm={12}>
-                        <h3>About Me</h3>
+                        <h3 className='mb-4'>ABOUT ME</h3>
                         <p>
-                            My name is Burhan Uddin. I'm 21. I'm a newbie full stack web developer.
-                            I'm a self taught web developer.
+                            My name is RAGIB SHARIAR. I'm a newbie full stack web developer.
+                            Currently I am learning full stack web development from programming hero.
                         </p>
                     </Col>
                     <Col lg={4} md={6} sm={12}>
-                        <h3>Contact Me</h3>
-                        <p>Email: burhan14nn@gmail.com</p>
-                        <p>Phone: 018xxxxxxx</p>
+                        <h3 className='mb-4'>CONTACT</h3>
+                        <p>Email: srragib@gmail.com</p>
+                        <p>Phone: 01918585333</p>
 
                     </Col>
                     <Col lg={4} md={6} sm={12}>
-                        <h3>Follow Me</h3>
-                        <p>Facebook: </p>
-                        <p>Twitter: </p>
-                        <p>Instagram: </p>
+                        <h3 className='mb-4'>FOLLOW ME</h3>
+                        <p><a className='text-white' href="#">Facebook</a></p>
+                        <p><a className='text-white' href="#">Twitter</a> </p>
+                        <p><a className='text-white' href="#">Instagram</a></p>
 
                     </Col>
                 </Row>
             </Container>
+                <Container className='text-center mt-4'>
+                <Row>
+                    <Col>
+                    <p>Copyright &copy; All rights reserved to RAGIB PERFUME ARENA </p>
+                    </Col>
+                </Row>
+                </Container>
         </div>
     );
 };

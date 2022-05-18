@@ -35,7 +35,7 @@ const ManageItems = () => {
 
     //adding to order lists
     const addToOrder = (bike) => {
-        const email = user.email;
+        const email = bike.email;
         const img = bike.img;
         const name = bike.name;
         const supplierName = bike.supplierName;
@@ -97,7 +97,7 @@ const ManageItems = () => {
                                     <td>
                                         {bike.supplierName}
                                     </td>
-                                    <td>{user.email}</td>
+                                    <td>{bike.email}</td>
                                     <td className='d-flexx text-center justify-content-around align-items-center  manage-btn-container'>
                                         <button onClick={() => { removeItem(bike._id) }} className='btn manage-btn btn-danger mx-2'><TrashIcon className=" text-blue-500" style={{ width: '20px', height:'20px' }} /></button>
                                         <button onClick={() => { addToOrder(bike) }} className='btn manage-btn btn-success mx-2'>

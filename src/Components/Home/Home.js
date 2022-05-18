@@ -14,28 +14,28 @@ const Home = () => {
         <div id='home'>
 
             {/* * * *  banner * * * * */}
-            <Carousel className='mt-5'>
+            <Carousel className=''>
                 <Carousel.Item>
-                    <img
-                        className="d-block w-100 h-50"
-                        src="https://i.ibb.co/yfc0Fxh/home-2.jpg"
+                    <img style={{height:'600px'}}
+                        className="d-block w-100 "
+                        src="https://i.ibb.co/nnQFTZz/Mens-Cologne-Web.jpg"
                         alt="First slide"
                     ></img>
                     <Carousel.Caption>
-                        <div className="banner-container text-dark">
-                            <h1 className='banner-heading'>Ragib Perfume Arena</h1>
-                            <p>Ragib Perfume Arena, the fragrance of jannah.</p>
+                        <div className="banner-container">
+                            <h1 className='banner-heading'>HUGE COLLECTION</h1>
+                            <p>DECANTS ARE AVAILABLE TOO!</p>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img
+                    <img style={{height:'600px'}}
                         className="d-block w-100"
-                        src="https://i.ibb.co/yfc0Fxh/home-2.jpg"
+                        src="https://i.ibb.co/nnQFTZz/Mens-Cologne-Web.jpg"
                         alt="First slide"
                     ></img>
                     <Carousel.Caption>
-                        <div className="banner-container text-dark">
+                        <div className="banner-container text-uppercase">
                             <h1 className='banner-heading'>Ragib Perfume Arena</h1>
                             <p>Ragib Perfume Arena, the fragrance of jannah.</p>
                         </div>
@@ -67,12 +67,12 @@ const Home = () => {
             <section className='container my-5'>
                 <div className='justify-content-between align-items-center custom-grid'>
                     <div className="rounded d-flex justify-content-center align-items-center custom-bg-light custom-height">
-                        <img src='https://i.ibb.co/PmxnpVD/image-6.png' className='trip-img' alt='not found' />
+                        <img src='https://i.ibb.co/0JZH0Kq/Ajmal-Senora-75ml-EDP-for-women-1.jpg' className='trip-img' alt='not found' />
                     </div>
                     <div className="d-flex flex-column custom-bg-dark rounded custom-height justify-content-center align-items-center px-5">
-                        <h2 className='text-center my-3'>Makes you <span className='text-primary'>Faster!!</span></h2>
+                        <h2 className='text-center my-3'>OUR<span className='text-primary'> COMMITMENT</span></h2>
                         <p className='text-center'>
-                            Iham bike bazar is the best place to get or order the best bikes and accessories. You can buy the best bikes and accessories for yourself or your friend. Don't get late for office!! Choose your bike.
+                        We understand that, when anyone is looking for an online solution, they just want to be sure about the products. We never sell any fake or counterfeit products. That’s our commitment to our buyers. You can always get 100% original perfumes from us.
                         </p>
                         <Button as={Link} to='/manage-items' className='btn btn-primary mt-1'>Choose now</Button>
                     </div>
