@@ -62,13 +62,8 @@ const MyItems = () => {
         <div>
             {
 
-                bikes.length === 0 ?
-                    <div className='mx-auto mt-5'>
-                        <div className='mx-auto w-25  justify-content-center d-flex'>
-                            <RotatingLines width="100" className='d-block mx-auto' />
-                        </div>
-                    </div>
-                    :
+                bikes.length !== 0 ?
+                
                     <Table striped bordered hover className='my-5 mx-auto custom-table'>
                         <thead>
                             <tr>
@@ -102,6 +97,9 @@ const MyItems = () => {
                             </tr>
                         </tbody>
                     </Table>
+                    : 
+                    <div className='container text-center my-5 py-5'> <h1 className='py-5'>You have not added any product.</h1></div>
+                    
             }
         </div>
     );
