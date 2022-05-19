@@ -34,7 +34,7 @@ const Header = () => {
                             <Nav>
                                 <CustomLink className='mx-3' to='/manage-items'>Manage Items</CustomLink>
                                 <CustomLink className='mx-3' to='/add-item'>Add Item</CustomLink>
-                                <CustomLink className='mx-3' to='/my-items'>Cart</CustomLink>
+                                <CustomLink className='mx-3' to='/my-items'>My Items</CustomLink>
                             </Nav>
                         }
 

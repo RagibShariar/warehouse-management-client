@@ -43,8 +43,8 @@ const ManageItems = () => {
         const email = bike.email;
         const newBike = { img, name, supplierName, email, price,userEmail }
         // console.log(newBike);
-        fetch(`https://protected-peak-69494.herokuapp.com/add-order`, {
-        // fetch(`http://localhost:5000/products`, {
+        // fetch(`https://protected-peak-69494.herokuapp.com/add-order`, {
+        fetch(`http://localhost:5000/add-order`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

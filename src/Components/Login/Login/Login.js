@@ -45,10 +45,11 @@ const Login = () => {
         const password = form.password.value;
 
         await signInWithEmailAndPassword(email, password);
-        const { data } = await axios.post('https://protected-peak-69494.herokuapp.com/login', { email });
+        // const { data } = await axios.post('https://protected-peak-69494.herokuapp.com/login', { email });
+        const { data } = await axios.post('http://localhost:5000/login', { email });
         console.log(data);
         localStorage.setItem('token', data.token);
-        // navigate(from, {replace: true}); 
+        navigate(from, {replace: true}); 
     }
 
     //logging in with google

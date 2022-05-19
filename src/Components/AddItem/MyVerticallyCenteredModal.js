@@ -16,7 +16,7 @@ const MyVerticallyCenteredModal = (props) => {
             </Modal.Header>
             <Modal.Body>
                 <h4>Requirements</h4>
-                <p>
+                
                     There are six input boxes. Please fill them out with valid information.
                     <ol>
                         <li>Product Name</li>
@@ -36,7 +36,7 @@ const MyVerticallyCenteredModal = (props) => {
                         <li>https://i.ibb.co/hfHV06J/Armaf-Club-de-Nuit-Sillage-EDP-450x450.jpg</li>
                         <li>https://i.ibb.co/M2TpKnK/davidoff-cool-water-intense-450x450.jpg</li>
                     </ul>
-                    </p>
+                    
             </Modal.Body>
             <Modal.Footer>
                 <Button onClick={props.onHide}>Close</Button>

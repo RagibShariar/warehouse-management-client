@@ -23,22 +23,22 @@ const AddItem = () => {
         const email = e.target.email.value;
 
         //adding item to database
-        fetch('http://localhost:5000/products/', {
+        fetch('http://localhost:5000/products', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ name, img, description, price, quantity, supplierName, sold: 0 })
+            body: JSON.stringify({ name, img, description, price, quantity, supplierName, sold: 0, email })
         })
 
         //adding to order too
-        // fetch(`http://localhost:5000/products/`, {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json'
-        //     },
-        //     body: JSON.stringify({ name, img, description, price, quantity, supplierName, email })
-        // })
+        fetch(`http://localhost:5000/add-order`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ name, img, description, price, quantity, supplierName, email })
+        })
             .then(res => res.json())
             .then(data => {
                 console.log(data);
