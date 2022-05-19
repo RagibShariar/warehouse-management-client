@@ -17,8 +17,8 @@ const MyItems = () => {
     useEffect(() => {
         async function getBikes() {
             // const url = `https://protected-peak-69494.herokuapp.com/order-list?email=${email}`;
-            const url = `http://localhost:5000/order-list?email=${email}`;
-            // const url = `http://localhost:5000/products?email=${email}`;
+            const url = `https://glacial-tor-45494.herokuapp.com/order-list?email=${email}`;
+            // const url = `https://glacial-tor-45494.herokuapp.com/products?email=${email}`;
             try {
                 const { data } = await axios.get(url, {
                     headers: {
@@ -44,8 +44,7 @@ const MyItems = () => {
         const confirm = window.confirm('Are you sure you want to delete?');
         //removing item from database
         if (confirm) {
-            // fetch(`https://protected-peak-69494.herokuapp.com/order-list/${id}`, {
-            fetch(`http://localhost:5000/order-list/${id}`, {
+            fetch(`https://glacial-tor-45494.herokuapp.com/order-list/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

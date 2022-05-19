@@ -18,7 +18,7 @@ const ManageItems = () => {
         const confirm = window.confirm('Click Confirm to delete');
         //removing item from database
         if (confirm) {
-            fetch(`http://localhost:5000/products/${id}`, {
+            fetch(`https://glacial-tor-45494.herokuapp.com/products/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -43,8 +43,7 @@ const ManageItems = () => {
         const email = bike.email;
         const newBike = { img, name, supplierName, email, price,userEmail }
         // console.log(newBike);
-        // fetch(`https://protected-peak-69494.herokuapp.com/add-order`, {
-        fetch(`http://localhost:5000/add-order`, {
+        fetch(`https://glacial-tor-45494.herokuapp.com/add-order`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

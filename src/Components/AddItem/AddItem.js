@@ -23,7 +23,7 @@ const AddItem = () => {
         const email = e.target.email.value;
 
         //adding item to database
-        fetch('http://localhost:5000/products', {
+        fetch('https://glacial-tor-45494.herokuapp.com/products', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -32,7 +32,7 @@ const AddItem = () => {
         })
 
         //adding to order too
-        fetch(`http://localhost:5000/add-order`, {
+        fetch(`https://glacial-tor-45494.herokuapp.com/add-order`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

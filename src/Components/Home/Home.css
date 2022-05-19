@@ -1,5 +1,6 @@
 .w-90 {
     width: 90%;
+    margin: 0 auto;
 }
 
 .btn-bottom:hover {
@@ -21,7 +22,7 @@
     }
 
     .custom-card {
-        margin: 1rem;
+        margin: 0;
     }
 }
 
@@ -36,6 +37,7 @@
     }
 
     .custom-card {
-        margin: 1rem;
+        /* margin: 1rem; */
+        margin-top: 15px !important;
     }
 }
